@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lista de Usuários</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="script.js" defer></script>
+    </head>
+
+    <body class="bg-sky-100 min-h-screen flex flex-col">
+        
+        <header class="py-8 text-center">
+            <h1 class="text-4xl font-extrabold text-slate-900">Lista de Usuários</h1>
+        </header>
+
+        <main class="flex justify-center px-4 flex-1">
+
+            <section class="w-full max-w-3xl bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+
+                <div class="flex justify-center mb-6">
+                    <button id="loadUsersBtn" class="bg-indigo-600 hover:bg-indigo-700 disabled:bg-indigo-400
+                            text-white font-medium px-6 py-2 rounded-lg transition-colors">
+                            Carregar Usuários
+                    </button>
+                </div>
+
+                <p id="messageLoad" class="text-center text-slate-500 mb-6">Nenhum usuário carregado ainda.</p>
+
+                <ul id="usersList" class="space-y-4"></ul>
+
+            </section>
+
+        </main>
+
+        <footer class="py-4 text-center text-black mt-auto">
+            &copy; 2026 ALFAMANAGER. Todos os direitos reservados.
+        </footer>
+    </body>
+</html>
